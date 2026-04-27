@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: ["./**/*.html"],
+  theme: {
+    extend: {
+      colors: {
+        "surface-container-high": "#e6e8eb",
+        "surface": "#f7f9fc",
+        "on-primary-fixed-variant": "#004a76",
+        "tertiary-fixed": "#ffdcc2",
+        "error-container": "#ffdad6",
+        "inverse-on-surface": "#eff1f4",
+        "on-tertiary-fixed": "#2e1500",
+        "tertiary-fixed-dim": "#ffb77a",
+        "on-secondary": "#ffffff",
+        "surface-container": "#eceef1",
+        "secondary-fixed-dim": "#cdc4c5",
+        "on-tertiary": "#ffffff",
+        "on-tertiary-fixed-variant": "#6d3a00",
+        "outline": "#707881",
+        "on-background": "#191c1e",
+        "inverse-surface": "#2d3133",
+        "on-error": "#ffffff",
+        "surface-variant": "#e0e3e6",
+        "on-surface": "#191c1e",
+        "surface-container-low": "#f2f4f7",
+        "secondary-fixed": "#e9e0e1",
+        "outline-variant": "#c0c7d1",
+        "secondary": "#635d5e",
+        "primary-container": "#0072b1",
+        "tertiary": "#814500",
+        "primary": "#00598b",
+        "surface-dim": "#d8dadd",
+        "secondary-container": "#e9e0e1",
+        "on-primary-fixed": "#001d32",
+        "on-secondary-fixed": "#1e1b1c",
+        "on-primary": "#ffffff",
+        "on-error-container": "#93000a",
+        "on-secondary-fixed-variant": "#4b4546",
+        "inverse-primary": "#96ccff",
+        "on-surface-variant": "#404750",
+        "surface-tint": "#00639a",
+        "surface-bright": "#f7f9fc",
+        "primary-fixed-dim": "#96ccff",
+        "tertiary-container": "#a45a00",
+        "error": "#ba1a1a",
+        "on-secondary-container": "#696364",
+        "on-tertiary-container": "#ffece0",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-highest": "#e0e3e6",
+        "background": "#f7f9fc",
+        "on-primary-container": "#e6f1ff",
+        "primary-fixed": "#cee5ff"
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      fontFamily: {
+        "headline": ["Manrope"],
+        "body": ["Inter"],
+        "label": ["Inter"]
+      }
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries'),
+  ],
+}

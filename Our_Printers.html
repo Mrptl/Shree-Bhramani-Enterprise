@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/output.css">
+<link rel="stylesheet" href="assets/custom.css">
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm">
+<nav class="relative flex justify-between items-center px-4 md:px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<button id="mobile-menu-btn" class="md:hidden text-slate-700 dark:text-slate-300 hover:text-sky-700 transition-colors" aria-label="Toggle Menu">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+<img alt="Shree Bhramani Logo" class="object-contain" style="height: 60px; width: auto;" src="assets/company_logo_cropped.png"/>
+</div>
+<div class="hidden md:flex items-center gap-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<a class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 transition-colors" href="index.html">Home</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sky-700 dark:text-sky-400 border-b-2 border-sky-700 dark:border-sky-400 pb-1" href="Our_Printers.html">Products</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 transition-colors" href="About_Contact.html">About</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 transition-colors" href="contact_us.html">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container rounded-lg border-none focus:ring-2 focus:ring-primary text-sm w-64" placeholder="Search machinery..." type="text"/>
+</div>
+<button class="hidden sm:block bg-industrial-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:scale-90 duration-200 shadow-md">
+                    Get Quote
+                </button>
+</div>
+</nav>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
+<div class="flex flex-col gap-4">
+<a class="text-xl font-['Manrope'] font-bold text-sky-700 dark:text-sky-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
+<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
+<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="About_Contact.html">About</a>
+<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="contact_us.html">Contact</a>
+</div>
+<button class="w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4">
+    Get Quote
+</button>
+</div>
+</header>
+<main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
+<!-- Hero Section Header -->
+<header class="mb-16">
+<h1 class="font-headline font-black text-6xl md:text-7xl text-on-surface tracking-tighter mb-4 max-w-4xl">
+                Precision Engineering for <span class="text-primary">Industrial Printing.</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+                Explore our world-class lineup of CIJ and Piezo printing technologies, designed for high-speed reliability and uncompromising accuracy in packaging and labeling.
+            </p>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
+<div class="flex flex-col gap-4">
+<a class="text-xl font-['Manrope'] font-bold text-sky-700 dark:text-sky-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
+<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
+<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="About_Contact.html">About</a>
+<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="contact_us.html">Contact</a>
+</div>
+<button class="w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4">
+    Get Quote
+</button>
+</div>
+</header>
+<!-- Category Controls & Filters -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
+<div class="flex flex-wrap gap-4">
+<button class="px-6 py-3 bg-surface-container-highest text-on-surface font-headline font-bold rounded-lg border-b-2 border-primary transition-all">
+                    All Equipment
+                </button>
+<button class="px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all">
+                    Packaging Printers
+                </button>
+<button class="px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all">
+                    Label Printers
+                </button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="text-sm font-label font-medium uppercase tracking-widest">Showing 10 Results</span>
+<div class="h-px w-12 bg-outline-variant opacity-20"></div>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+    <!-- Printer 1 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer1_gen.png"/>
+            <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">CIJ Technology</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Bhramani Jet CIJ-100</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High-speed continuous inkjet printer for coding on fast-moving production lines.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="Bhramani Jet CIJ-100"
+            data-category="CIJ Technology"
+            data-image="assets/printer1_gen.png"
+            data-desc="Our flagship CIJ printer offers uncompromising reliability in harsh industrial environments. Optimized for high-speed marking on plastic, glass, and metal containers."
+            data-specs="['Print Speed: 500m/min', 'Nozzle Size: 60 micron', 'IP Rating: IP55 Dust/Water Resistant', 'Ink Types: Pigmented/Dye-based']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 2 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer2_gen.png"/>
+            <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Thermal Inkjet TIJ-200</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Maintenance-free thermal inkjet solution ideal for high-resolution 2D codes.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="Thermal Inkjet TIJ-200"
+            data-category="TIJ Series"
+            data-image="assets/printer2_gen.png"
+            data-desc="The TIJ-200 provides crisp, high-resolution 600dpi prints without the mess of traditional ink systems. Ideal for pharmaceutical and food grade packaging."
+            data-specs="['Resolution: 600 DPI', 'Maintenance: Zero (Cartridge-based)', 'Print Height: Up to 25.4mm', 'Substrates: Paper, Cardboard, Coated films']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 3 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer3_gen.png"/>
+            <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Handheld</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Handheld Pro M3</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Portable battery-operated coder for marking on large and heavy items.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="Handheld Pro M3"
+            data-category="Handheld"
+            data-image="assets/printer3_gen.png"
+            data-desc="Take the printer to the product. The M3 is an ergonomic, lightweight solution for marking large pallets, pipes, and irregular surfaces with ease."
+            data-specs="['Battery Life: 10 Hours Active Use', 'Weight: 800g (with battery)', 'Display: 5-inch HD Touchscreen', 'Connection: Bluetooth / Wi-Fi']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 4 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer4_gen.png"/>
+            <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Laser Coder</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Fiber Laser L-40</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Permanent high-contrast marking on metals and plastics with zero consumables.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="Fiber Laser L-40"
+            data-category="Laser Coder"
+            data-image="assets/printer4_gen.png"
+            data-desc="Fiber laser technology provides permanent marking that won't fade or wash off. Extremely low operating costs due to the absence of ink and ribbons."
+            data-specs="['Laser Power: 20W / 30W / 50W', 'Cooling: Air Cooled', 'Source Life: 100,000 Hours', 'Marking Field: 110x110mm standard']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 5 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer5_gen.png"/>
+            <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">UV Series</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">UV Curing Coder U-60</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Instant drying UV ink technology for non-porous materials like glass and plastic.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="UV Curing Coder U-60"
+            data-category="UV Series"
+            data-image="assets/printer5_gen.png"
+            data-desc="Equipped with advanced LED curing technology, this printer ensures ink dries instantly even on the smoothest surfaces like glass and metal."
+            data-specs="['Curing Type: LED UV', 'Ink Adhesion: High (Scratch resistant)', 'Substrates: Glass, PET, Aluminum', 'Interface: Industrial PLC']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 6 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer6_gen.png"/>
+            <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">DOD Printing</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">DOD Character D-50</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Large character inkjet printer for cases, cartons, and industrial packaging.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="DOD Character D-50"
+            data-category="DOD Printing"
+            data-image="assets/printer6_gen.png"
+            data-desc="Drop-on-demand technology for large character printing. Perfect for marking on porous surfaces like cardboard boxes and wooden crates."
+            data-specs="['Character Height: 5mm to 60mm', 'Nozzle Array: 16-dot', 'System: Pressurized Solenoid', 'Durability: IP65 Rated Cabinets']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 7 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer7_gen.png"/>
+            <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Piezo Series</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Piezo High-Res P-70</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Grayscale piezoelectric technology for graphics and precise labeling.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="Piezo High-Res P-70"
+            data-category="Piezo Series"
+            data-image="assets/printer7_gen.png"
+            data-desc="Piezoelectric drop-on-demand print heads deliver exceptional image quality for high-resolution graphics and complex industrial labeling."
+            data-specs="['Grayscale: 16 levels', 'Drop Size: 6pl to 30pl variable', 'Connectivity: Gigabit Ethernet', 'Ink: Solvent / UV']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 8 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer8_gen.png"/>
+            <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">CO2 Laser</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">CO2 Laser System C-80</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High-speed laser marking for organic materials like paper and cardboard.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="CO2 Laser System C-80"
+            data-category="CO2 Laser"
+            data-image="assets/printer8_gen.png"
+            data-desc="Ideal for marking on organic substrates. The C-80 offers high-speed vector marking for complex logos and serialized data."
+            data-specs="['Power Output: 10W / 30W / 60W', 'Wavelength: 10.6 micron', 'Controller: Embedded PC', 'Housing: Stainless Steel']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 9 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer9_gen.png"/>
+            <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Systems</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Conveyor Print Station</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Fully integrated marking system for automated production workflows.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="Conveyor Print Station"
+            data-category="Systems"
+            data-image="assets/printer9_gen.png"
+            data-desc="A turnkey solution featuring heavy-duty conveyor integration and synchronized print heads for seamless production floor operations."
+            data-specs="['Conveyor Length: Customizable', 'Max Load: 50kg/meter', 'Drive: Variable Frequency Drive', 'Sensors: High-precision Photoelectric']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+
+    <!-- Printer 10 -->
+    <div class="group flex flex-col reveal">
+        <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer10_gen.png"/>
+            <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Smart Control</div>
+        </div>
+        <div class="flex-1">
+            <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">SmartFlow Hub W10</h3>
+            <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Advanced control system for managing multiple print heads across complex lines.</p>
+        </div>
+        <button 
+            class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn"
+            data-title="SmartFlow Hub W10"
+            data-category="Smart Control"
+            data-image="assets/printer10_gen.png"
+            data-desc="Centralized management hub that allows real-time monitoring and control of up to 16 print heads from a single touchscreen interface."
+            data-specs="['Max Heads: 16', 'Software: Bhramani Logic OS', 'Analytics: Cloud Dashboard Support', 'I/O Ports: USB, RS232, Ethernet']">
+            View Specs
+            <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1">arrow_forward_ios</span>
+        </button>
+    </div>
+</div>
+<!-- Call to Action Section -->
+<section class="mt-32 bg-on-surface rounded-xl overflow-hidden flex flex-col md:flex-row items-stretch min-h-[400px]">
+<div class="flex-1 p-12 md:p-20 flex flex-col justify-center">
+<h2 class="font-headline font-black text-4xl md:text-5xl text-surface mb-6 tracking-tighter">Customized Industrial Solutions.</h2>
+<p class="text-surface-variant text-lg mb-10 max-w-md opacity-80 leading-relaxed">
+                    Need a specific configuration for your production line? Our engineers design bespoke printing modules tailored to your volume and materials.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-gradient-primary text-on-primary px-8 py-4 rounded-lg font-headline font-bold text-base scale-95 active:scale-90 transition-all">
+                        Consult an Expert
+                    </button>
+<button class="text-surface font-headline font-bold border border-surface/20 hover:bg-surface/10 px-8 py-4 rounded-lg transition-all">
+                        Download Catalog
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="abstract close up of industrial ink rollers with blue and black ink textures creating a sophisticated artistic pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFjBq4fT5tGhxO6kZ4Qfq_jtVg9q4HHar5g3V88-79blSLTRxxffyEQGOJ2mmwHnfpIz3N3ZFmtQqjF76GG_CapWKuTqojGyyWiK2dDpy_Pn7e7Z2BRIQNMKLC6KBgoiOgZYSQtJ76TIst0-I_DlIZtxWYOhPaXc_ZuT_Ita8AJJNUyiKnD0NlIeS55-FFKW2CC1o2cEsHtTlYwtOh4YD6170YpmNYIfL3wn6i1CJLFDZypMvy-XKZMJgH2ckk5MIeFFgj_5eSx0A"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface via-transparent to-transparent"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Manrope'] font-bold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sky-700">print</span>
+                    Shree Bhramani
+                </div>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Setting the standard for industrial precision since 1998. Specialized in high-performance printing solutions.
+                </p>
+</div>
+<div>
+<h4 class="font-['Manrope'] font-bold text-slate-900 dark:text-slate-100 text-sm mb-4">Quick Links</h4>
+<ul class="space-y-3">
+<li><a class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-300 transition-opacity opacity-80 hover:opacity-100" href="Our_Printers.html">Products</a></li>
+<li><a class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-300 transition-opacity opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li><a class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-300 transition-opacity opacity-80 hover:opacity-100" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] font-bold text-slate-900 dark:text-slate-100 text-sm mb-4">Support</h4>
+<ul class="space-y-3">
+<li><a class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-300 transition-opacity opacity-80 hover:opacity-100" href="contact_us.html">Technical Support</a></li>
+<li><a class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-300 transition-opacity opacity-80 hover:opacity-100" href="contact_us.html">Machine Maintenance</a></li>
+<li><a class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-sky-700 dark:hover:text-sky-300 transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] font-bold text-slate-900 dark:text-slate-100 text-sm mb-4">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-highest border-none rounded p-2 text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Email address" type="email"/>
+<button class="material-symbols-outlined bg-primary text-on-primary p-2 rounded">send</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-12 pt-8 border-t border-slate-200/50 dark:border-slate-800/50">
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400">
+                © 2024 Shree Bhramani Enterprise. Engineered for Precision.
+            </p>
+</div>
+</footer>
+
+<!-- Modal for Specifications -->
+<div id="specs-modal" class="modal-overlay fixed inset-0 z-[60] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-content bg-surface w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden relative">
+        <!-- Close Button -->
+        <button id="close-modal" class="absolute top-6 right-6 p-2 rounded-full hover:bg-slate-100 transition-colors z-10 text-slate-500">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        
+        <div class="flex flex-col md:flex-row h-full">
+            <!-- Modal Image Side -->
+            <div class="md:w-5/12 bg-surface-container-low p-8 flex items-center justify-center border-r border-outline-variant/10">
+                <img id="modal-image" src="" alt="" class="w-full h-auto object-contain drop-shadow-2xl">
+            </div>
+            
+            <!-- Modal Content Side -->
+            <div class="md:w-7/12 p-10">
+                <div class="mb-6">
+                    <span id="modal-category" class="bg-primary-container text-on-primary-container px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase mb-3 inline-block">Category</span>
+                    <h2 id="modal-title" class="font-headline font-black text-3xl text-on-surface leading-tight">Printer Name</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Core Specifications</h4>
+                        <ul id="modal-specs" class="grid grid-cols-1 gap-3">
+                            <!-- Specs will be injected here -->
+                        </ul>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-outline-variant/10">
+                        <p id="modal-desc" class="text-sm text-on-surface-variant leading-relaxed">Detailed description will go here.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-10 flex gap-4">
+                    <button class="flex-1 bg-industrial-gradient text-on-primary py-3.5 rounded-xl font-bold text-sm shadow-lg hover:shadow-primary/20 transition-all">Request Quote</button>
+                    <button class="p-3.5 rounded-xl border border-outline-variant hover:bg-slate-50 transition-colors">
+                        <span class="material-symbols-outlined text-slate-600">download</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 z-40 bg-primary text-on-primary w-12 h-12 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all" aria-label="Back to Top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+</button>
+
+    <script src="assets/main.js"></script>
+</body></html>
