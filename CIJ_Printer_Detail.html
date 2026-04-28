@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/output.css">
-<link rel="stylesheet" href="assets/custom.css?v=2.0">
+<link rel="stylesheet" href="assets/custom.css?v=3.0">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,10 +49,10 @@
 <nav class="relative flex justify-between items-center px-4 md:px-8 h-20 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-3">
 <button id="mobile-menu-btn" class="md:hidden text-slate-700 dark:text-slate-300 hover:text-blue-900 transition-colors" aria-label="Toggle Menu">
-<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+<span class="material-symbols-outlined text-3xl" data-icon="menu" aria-hidden="true">menu</span>
 </button>
 <a href="index.html" class="flex items-center gap-3">
-    <img alt="Shree Bhramani Logo" class="object-contain" style="height: 50px; width: auto;" src="assets/SHREE_BRAHMANI_INDUSTRIES_LOGO.png"/>
+    <img alt="Shree Bhramani Logo" class="object-contain" style="height: 55px; width: auto;" src="assets/SHREE_BRAHMANI_INDUSTRIES_LOGO.png"/>
     <img alt="Shree Brahmani Industries" class="object-contain hidden sm:block" style="height: 30px; width: auto;" src="assets/company_name.png"/>
 </a>
 </div>
@@ -68,7 +68,7 @@
                 </a>
 </div>
 </nav>
-<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
+<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-white dark:bg-slate-950 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
 <div class="flex flex-col gap-4">
 <a class="text-xl font-['Manrope'] font-bold text-blue-900 dark:text-blue-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
@@ -84,9 +84,9 @@
 <section class="max-w-screen-2xl mx-auto px-8 lg:grid lg:grid-cols-12 gap-12 items-start py-12">
 <div class="col-span-12 mb-8 flex items-center gap-2 text-label-md text-on-surface-variant">
 <span>Products</span>
-<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="material-symbols-outlined text-sm" aria-hidden="true">chevron_right</span>
 <span>Industrial Printers</span>
-<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="material-symbols-outlined text-sm" aria-hidden="true">chevron_right</span>
 <span class="font-bold text-primary">SB-9000 CIJ Series</span>
 </div>
 <div class="lg:col-span-7 space-y-6">
@@ -116,7 +116,7 @@
 <div class="space-y-6 mb-12">
 <div class="flex items-start gap-4">
 <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">speed</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">speed</span>
 </div>
 <div>
 <h3 class="font-headline font-bold text-on-surface">Maximum Velocity</h3>
@@ -125,7 +125,7 @@
 </div>
 <div class="flex items-start gap-4">
 <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">precision_manufacturing</span>
 </div>
 <div>
 <h3 class="font-headline font-bold text-on-surface">Precision Alignment</h3>
@@ -245,7 +245,7 @@
 </section>
 </main>
 <footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 w-full py-12">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-screen-2xl mx-auto">
 <div class="space-y-4">
 <div class="font-['Manrope'] font-bold text-slate-900 dark:text-slate-100 text-lg">Shree Bhramani Industries</div>
 <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
@@ -271,7 +271,7 @@
 <div class="flex">
 <input class="bg-white dark:bg-slate-800 border-none rounded-l-lg p-2 w-full focus:ring-1 focus:ring-primary outline-none" placeholder="Your Email" type="text"/>
 <button class="bg-primary text-on-primary px-4 rounded-r-lg">
-<span class="material-symbols-outlined">send</span>
+<span class="material-symbols-outlined" aria-hidden="true">send</span>
 </button>
 </div>
 </div>

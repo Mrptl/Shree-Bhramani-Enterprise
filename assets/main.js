@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 preloader.classList.add('loaded');
                 setTimeout(() => {
                     preloader.style.display = 'none';
-                }, 800); // match CSS transition duration
+                }, 400); // match CSS transition duration
             }, 300);
         }
     });

@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/output.css">
-<link rel="stylesheet" href="assets/custom.css?v=2.0">
+<link rel="stylesheet" href="assets/custom.css?v=3.0">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,10 +46,10 @@
 <nav class="relative flex justify-between items-center px-4 md:px-8 h-20 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-3">
 <button id="mobile-menu-btn" class="md:hidden text-slate-700 dark:text-slate-300 hover:text-blue-900 transition-colors" aria-label="Toggle Menu">
-<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+<span class="material-symbols-outlined text-3xl" data-icon="menu" aria-hidden="true">menu</span>
 </button>
 <a href="index.html" class="flex items-center gap-3">
-    <img alt="Shree Bhramani Logo" class="object-contain" style="height: 50px; width: auto;" src="assets/SHREE_BRAHMANI_INDUSTRIES_LOGO.png"/>
+    <img alt="Shree Bhramani Logo" class="object-contain" style="height: 55px; width: auto;" src="assets/SHREE_BRAHMANI_INDUSTRIES_LOGO.png"/>
     <img alt="Shree Brahmani Industries" class="object-contain hidden sm:block" style="height: 30px; width: auto;" src="assets/company_name.png"/>
 </a>
 </div>
@@ -65,7 +65,7 @@
                 </a>
 </div>
 </nav>
-<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
+<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-white dark:bg-slate-950 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
 <div class="flex flex-col gap-4">
 <a class="text-xl font-['Manrope'] font-bold text-blue-900 dark:text-blue-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
@@ -112,12 +112,12 @@
 </div>
 <div class="grid grid-cols-1 gap-1">
 <div class="bg-surface-container-lowest p-10 rounded-xl mb-8">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">biotech</span>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" aria-hidden="true">biotech</span>
 <h3 class="text-2xl font-headline font-bold mb-4">Our Mission</h3>
 <p class="text-on-surface-variant">To empower global manufacturing by providing precision packaging solutions that minimize waste and maximize output through superior engineering.</p>
 </div>
 <div class="bg-primary-container p-10 rounded-xl text-on-primary-container">
-<span class="material-symbols-outlined text-surface-container-lowest text-4xl mb-6">verified_user</span>
+<span class="material-symbols-outlined text-surface-container-lowest text-4xl mb-6" aria-hidden="true">verified_user</span>
 <h3 class="text-2xl font-headline font-bold mb-4">Our Commitment</h3>
 <p class="opacity-90">Every machine bearing the Shree Bhramani mark undergoes rigorous 72-hour stress testing, ensuring reliability in 24/7 industrial environments.</p>
 </div>
@@ -127,7 +127,7 @@
 </section>
 </main>
 <footer class="w-full py-12 bg-slate-100 dark:bg-slate-900 border-t border-slate-200">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-screen-2xl mx-auto">
 <div class="md:col-span-1">
 <p class="font-headline font-bold text-slate-900 dark:text-slate-100 mb-4">Shree Bhramani</p>
 <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Pioneering industrial precision and reliability in packaging technology since 1998.</p>
@@ -149,8 +149,8 @@
 <div>
 <p class="text-blue-900 font-bold mb-4 uppercase text-xs tracking-widest">Connect</p>
 <div class="flex gap-4">
-<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
-<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">hub</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined" aria-hidden="true">share</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined" aria-hidden="true">hub</span></a>
 </div>
 </div>
 </div>
