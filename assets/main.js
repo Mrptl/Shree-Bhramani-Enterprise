@@ -118,17 +118,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================
-    // Scroll Reveal Animation
+    // Scroll Reveal Animation (IntersectionObserver — Progressive Enhancement)
+    // Elements are visible by default; JS adds reveal-init (hidden state)
+    // then reveals via IntersectionObserver as they enter the viewport.
     // ============================================================
-    const reveal = () => {
-        document.querySelectorAll('.reveal').forEach(el => {
-            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-                el.classList.add('active');
-            }
-        });
-    };
-    window.addEventListener('scroll', reveal, { passive: true });
-    reveal();
+    const revealEls = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+        revealEls.forEach(el => el.classList.add('reveal-init'));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Only reveal once
+                }
+            });
+        }, { threshold: 0.05, rootMargin: '0px 0px -60px 0px' });
+
+        revealEls.forEach(el => observer.observe(el));
+    }
+    // If IntersectionObserver not available, elements stay visible (CSS default)
 
     // ============================================================
     // Back to Top Button

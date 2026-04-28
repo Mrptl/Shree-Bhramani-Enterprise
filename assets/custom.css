@@ -7,12 +7,18 @@
 
 /* --- Scroll Reveal Animation --- */
 .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1), transform 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
 }
 
-.reveal.active {
+/* JS adds .reveal-init to enable the hidden-before-scroll state */
+.reveal-init {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.reveal-init.active {
     opacity: 1;
     transform: translateY(0);
 }
