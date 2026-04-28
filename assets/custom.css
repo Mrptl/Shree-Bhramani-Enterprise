@@ -89,8 +89,8 @@
 /* --- WhatsApp Floating Button --- */
 #whatsapp-btn {
     position: fixed;
-    bottom: 90px;
-    right: 32px;
+    bottom: 24px;
+    right: 24px;
     z-index: 40;
     width: 52px;
     height: 52px;
@@ -113,4 +113,10 @@
     width: 28px;
     height: 28px;
     fill: white;
+}
+
+/* --- Back to Top: sit above WhatsApp button --- */
+#back-to-top {
+    bottom: 88px !important;
+    right: 24px !important;
 }
