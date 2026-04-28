@@ -181,18 +181,19 @@
                 </p>
 </div>
 <div class="bg-surface-container-lowest p-8 lg:p-12 rounded-2xl shadow-xl shadow-slate-200/50 border border-outline-variant/10">
-<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<form class="quote-form grid grid-cols-1 md:grid-cols-2 gap-8" data-product-name="SB-9000 CIJ Industrial Printer">
+<input type="hidden" name="product" value="SB-9000 CIJ Industrial Printer"/>
 <div class="space-y-2">
 <label class="text-label-md font-bold text-on-surface-variant">Full Name</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none border-b-2 border-primary" placeholder="John Doe" type="text"/>
+<input name="name" class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none border-b-2 border-primary" placeholder="John Doe" type="text" required/>
 </div>
 <div class="space-y-2">
 <label class="text-label-md font-bold text-on-surface-variant">Company Email</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none" placeholder="john@enterprise.com" type="email"/>
+<input name="email" class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none" placeholder="john@enterprise.com" type="email" required/>
 </div>
 <div class="space-y-2">
 <label class="text-label-md font-bold text-on-surface-variant">Industry Segment</label>
-<select class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none">
+<select name="industry" class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none">
 <option>Pharmaceuticals</option>
 <option>Food &amp; Beverage</option>
 <option>Automotive</option>
@@ -201,18 +202,19 @@
 </div>
 <div class="space-y-2">
 <label class="text-label-md font-bold text-on-surface-variant">Estimated Daily Output</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none" placeholder="Units per day" type="text"/>
+<input name="dailyOutput" class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none" placeholder="Units per day" type="text"/>
 </div>
 <div class="md:col-span-2 space-y-2">
 <label class="text-label-md font-bold text-on-surface-variant">Message / Specific Requirements</label>
-<textarea class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none" placeholder="Tell us about your production line challenges..." rows="4"></textarea>
+<textarea name="message" class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all outline-none" placeholder="Tell us about your production line challenges..." rows="4"></textarea>
 </div>
 <div class="md:col-span-2">
 <button class="w-full py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-lg text-lg hover:shadow-2xl transition-all active:scale-[0.98]" type="submit">
-                            Submit Request for Quote
-                        </button>
+    Submit Request for Quote
+</button>
 </div>
 </form>
+
 </div>
 </section>
 </main>
