@@ -256,17 +256,104 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ============================================================
-    // "Get Quote" buttons — open a quick quote modal or redirect
+    // Product Filter — Our_Printers.html
     // ============================================================
-    document.querySelectorAll('.get-quote-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const target = document.getElementById('quote-section') || document.getElementById('contact-form');
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            } else {
-                window.location.href = 'contact_us.html';
-            }
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+    const resultCount = document.getElementById('result-count');
+
+    function updateResultCount() {
+        const visible = document.querySelectorAll('.product-card:not(.hidden-by-filter)').length;
+        if (resultCount) {
+            resultCount.textContent = `Showing ${visible} Result${visible !== 1 ? 's' : ''}`;
+        }
+    }
+
+    if (filterBtns.length && productCards.length) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                // Update active state on buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-surface-container-highest', 'border-b-2', 'border-primary', 'text-on-surface');
+                    b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+                });
+                btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+                btn.classList.add('bg-surface-container-highest', 'border-b-2', 'border-primary', 'text-on-surface');
+
+                // Filter cards
+                productCards.forEach(card => {
+                    const categories = card.dataset.category || '';
+                    if (filter === 'all' || categories.includes(filter)) {
+                        card.classList.remove('hidden-by-filter');
+                    } else {
+                        card.classList.add('hidden-by-filter');
+                    }
+                });
+
+                updateResultCount();
+            });
         });
+
+        updateResultCount();
+    }
+
+    // ============================================================
+    // Product Search — Our_Printers.html
+    // ============================================================
+    const searchInput = document.querySelector('input[placeholder="Search machinery..."]');
+    if (searchInput && productCards.length) {
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim().toLowerCase();
+
+            productCards.forEach(card => {
+                const name = (card.dataset.name || card.querySelector('h3, h4')?.textContent || '').toLowerCase();
+                if (!query || name.includes(query)) {
+                    card.classList.remove('hidden-by-filter');
+                } else {
+                    card.classList.add('hidden-by-filter');
+                }
+            });
+
+            // Reset active filter button to "All" when searching
+            if (query) {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-surface-container-highest', 'border-b-2', 'border-primary', 'text-on-surface');
+                    b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+                });
+            }
+
+            updateResultCount();
+        });
+    }
+
+    // ============================================================
+    // Newsletter Form — footer subscribe
+    // ============================================================
+    document.querySelectorAll('[id="newsletter-form"], form.newsletter-form').forEach(form => {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const emailInput = form.querySelector('input[type="email"]');
+            if (!emailInput || !emailInput.value) return;
+            showToast('✅ Thanks for subscribing! We\'ll keep you updated.', 'success');
+            emailInput.value = '';
+        });
+    });
+
+    // Generic footer email inputs with adjacent send buttons
+    document.querySelectorAll('footer input[type="email"]').forEach(input => {
+        const btn = input.parentElement?.querySelector('button');
+        if (btn) {
+            btn.addEventListener('click', () => {
+                if (!input.value.trim()) {
+                    showToast('Please enter your email address.', 'error');
+                    return;
+                }
+                showToast('✅ Thanks for subscribing!', 'success');
+                input.value = '';
+            });
+        }
     });
 
 }); // end DOMContentLoaded

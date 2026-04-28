@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Printers &amp; Products | Shree Bhramani Enterprise</title>
+<meta name="description" content="Explore Shree Bhramani Enterprise's full range of industrial printers — CIJ, TIJ, Laser, Piezo, Handheld, UV, and DOD coding solutions for packaging manufacturers." />
+<link rel="icon" type="image/png" href="assets/company_logo_cropped.png" />
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/output.css">
 <link rel="stylesheet" href="assets/custom.css">
@@ -31,9 +30,9 @@
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
 <input class="pl-10 pr-4 py-2 bg-surface-container rounded-lg border-none focus:ring-2 focus:ring-primary text-sm w-64" placeholder="Search machinery..." type="text"/>
 </div>
-<button class="hidden sm:block bg-industrial-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:scale-90 duration-200 shadow-md">
+<a href="contact_us.html" class="get-quote-btn hidden sm:block bg-industrial-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:scale-90 duration-200 shadow-md">
                     Get Quote
-                </button>
+                </a>
 </div>
 </nav>
 
@@ -45,9 +44,9 @@
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="About_Contact.html">About</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="contact_us.html">Contact</a>
 </div>
-<button class="w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4">
+<a href="contact_us.html" class="get-quote-btn w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4 block text-center">
     Get Quote
-</button>
+</a>
 </div>
 </header>
 <main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
@@ -60,41 +59,30 @@
                 Explore our world-class lineup of CIJ and Piezo printing technologies, designed for high-speed reliability and uncompromising accuracy in packaging and labeling.
             </p>
 
-<!-- Mobile Menu Drawer -->
-<div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
-<div class="flex flex-col gap-4">
-<a class="text-xl font-['Manrope'] font-bold text-sky-700 dark:text-sky-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
-<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
-<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="About_Contact.html">About</a>
-<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="contact_us.html">Contact</a>
-</div>
-<button class="w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4">
-    Get Quote
-</button>
-</div>
 </header>
+<!-- Second duplicate mobile-menu removed -->
 <!-- Category Controls & Filters -->
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
 <div class="flex flex-wrap gap-4">
-<button class="px-6 py-3 bg-surface-container-highest text-on-surface font-headline font-bold rounded-lg border-b-2 border-primary transition-all">
+<button class="filter-btn px-6 py-3 bg-surface-container-highest text-on-surface font-headline font-bold rounded-lg border-b-2 border-primary transition-all" data-filter="all">
                     All Equipment
                 </button>
-<button class="px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all">
+<button class="filter-btn px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all" data-filter="packaging">
                     Packaging Printers
                 </button>
-<button class="px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all">
+<button class="filter-btn px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all" data-filter="label">
                     Label Printers
                 </button>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
-<span class="text-sm font-label font-medium uppercase tracking-widest">Showing 10 Results</span>
+<span id="result-count" class="text-sm font-label font-medium uppercase tracking-widest">Showing 10 Results</span>
 <div class="h-px w-12 bg-outline-variant opacity-20"></div>
 </div>
 </div>
 <!-- Product Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
     <!-- Printer 1 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="Bhramani Jet CIJ-100">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer1_gen.png"/>
             <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">CIJ Technology</div>
@@ -116,7 +104,7 @@
     </div>
 
     <!-- Printer 2 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging label" data-name="Thermal Inkjet TIJ-200">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer2_gen.png"/>
             <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
@@ -138,7 +126,7 @@
     </div>
 
     <!-- Printer 3 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="all" data-name="Handheld Pro M3">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer3_gen.png"/>
             <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Handheld</div>
@@ -160,7 +148,7 @@
     </div>
 
     <!-- Printer 4 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="Fiber Laser L-40">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer4_gen.png"/>
             <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Laser Coder</div>
@@ -182,7 +170,7 @@
     </div>
 
     <!-- Printer 5 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging label" data-name="UV Curing Coder U-60">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer5_gen.png"/>
             <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">UV Series</div>
@@ -204,7 +192,7 @@
     </div>
 
     <!-- Printer 6 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="DOD Character D-50">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer6_gen.png"/>
             <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">DOD Printing</div>
@@ -226,7 +214,7 @@
     </div>
 
     <!-- Printer 7 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="label" data-name="Piezo High-Res P-70">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer7_gen.png"/>
             <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Piezo Series</div>
@@ -248,7 +236,7 @@
     </div>
 
     <!-- Printer 8 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="CO2 Laser System C-80">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer8_gen.png"/>
             <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">CO2 Laser</div>
@@ -270,7 +258,7 @@
     </div>
 
     <!-- Printer 9 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="Conveyor Print Station">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer9_gen.png"/>
             <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Systems</div>
@@ -292,7 +280,7 @@
     </div>
 
     <!-- Printer 10 -->
-    <div class="group flex flex-col reveal">
+    <div class="group flex flex-col reveal product-card" data-category="packaging label" data-name="SmartFlow Hub W10">
         <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
             <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printer10_gen.png"/>
             <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Smart Control</div>
@@ -320,10 +308,10 @@
 <p class="text-surface-variant text-lg mb-10 max-w-md opacity-80 leading-relaxed">
                     Need a specific configuration for your production line? Our engineers design bespoke printing modules tailored to your volume and materials.
                 </p>
-<div class="flex flex-wrap gap-6">
-<button class="bg-gradient-primary text-on-primary px-8 py-4 rounded-lg font-headline font-bold text-base scale-95 active:scale-90 transition-all">
+<div class="flex-wrap gap-6">
+<a href="contact_us.html" class="get-quote-btn bg-gradient-primary text-on-primary px-8 py-4 rounded-lg font-headline font-bold text-base scale-95 active:scale-90 transition-all">
                         Consult an Expert
-                    </button>
+                    </a>
 <button class="text-surface font-headline font-bold border border-surface/20 hover:bg-surface/10 px-8 py-4 rounded-lg transition-all">
                         Download Catalog
                     </button>
@@ -373,7 +361,7 @@
 </div>
 <div class="max-w-7xl mx-auto px-12 mt-12 pt-8 border-t border-slate-200/50 dark:border-slate-800/50">
 <p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400">
-                © 2024 Shree Bhramani Enterprise. Engineered for Precision.
+                © 2026 Shree Bhramani Enterprise. Engineered for Precision.
             </p>
 </div>
 </footer>
@@ -427,6 +415,9 @@
 <button id="back-to-top" class="fixed bottom-8 right-8 z-40 bg-primary text-on-primary w-12 h-12 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all" aria-label="Back to Top">
     <span class="material-symbols-outlined">arrow_upward</span>
 </button>
-
+<!-- WhatsApp Floating Button -->
+<a id="whatsapp-btn" href="https://wa.me/917925830000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
     <script src="assets/main.js"></script>
 </body></html>

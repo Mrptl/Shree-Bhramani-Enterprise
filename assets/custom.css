@@ -70,3 +70,47 @@
 .industrial-gradient {
     background: var(--industrial-gradient);
 }
+
+/* --- Fixed: Missing gradient classes used in HTML --- */
+.editorial-gradient {
+    background: var(--industrial-gradient);
+    color: white;
+}
+
+.bg-gradient-primary {
+    background: var(--industrial-gradient);
+}
+
+/* --- Product Filter --- */
+.product-card.hidden-by-filter {
+    display: none;
+}
+
+/* --- WhatsApp Floating Button --- */
+#whatsapp-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 32px;
+    z-index: 40;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #25d366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+#whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 28px rgba(37, 211, 102, 0.65);
+}
+
+#whatsapp-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
