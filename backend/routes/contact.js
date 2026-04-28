@@ -106,7 +106,7 @@ router.post('/', contactLimiter, validateContact, async (req, res, next) => {
             to:      submission.email,
             subject: `We received your inquiry — Ref: ${submission.id}`,
             html:    contactConfirmationHtml(submission),
-            text:    `Hi ${submission.name},\n\nThank you for reaching out to Shree Bhramani Enterprise. Your inquiry has been received (Ref: ${submission.id}) and our team will respond within 24–48 business hours.\n\nBest regards,\nShree Bhramani Enterprise`
+            text:    `Hi ${submission.name},\n\nThank you for reaching out to Shree Bhramani Industries. Your inquiry has been received (Ref: ${submission.id}) and our team will respond within 24–48 business hours.\n\nBest regards,\nShree Bhramani Industries`
           })]
         : []
       )

@@ -1,7 +1,7 @@
 /* --- Design System Extensions --- */
 
 :root {
-    --industrial-gradient: linear-gradient(135deg, #00598b 0%, #002d46 100%);
+    --industrial-gradient: linear-gradient(135deg, #1e3a8a 0%, #dc2626 100%);
     --premium-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
 }
 

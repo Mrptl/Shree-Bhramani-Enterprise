@@ -1,5 +1,5 @@
 /**
- * Shree Bhramani Enterprise — Main JavaScript
+ * Shree Bhramani Industries — Main JavaScript
  * Handles: Mobile Menu, Scroll Reveal, Back to Top, Product Modals,
  *          Contact Form, Quote Form (all connected to the backend API)
  */

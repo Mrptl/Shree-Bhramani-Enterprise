@@ -1,4 +1,4 @@
-# Shree Bhramani Enterprise — Backend API
+# Shree Bhramani Industries — Backend API
 
 Node.js + Express REST API powering the contact forms, quote requests, and product catalog.
 

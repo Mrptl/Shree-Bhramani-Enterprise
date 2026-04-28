@@ -1,5 +1,5 @@
 // ====================================================================
-// Shree Bhramani Enterprise - Backend API Server
+// Shree Bhramani Industries - Backend API Server
 // Express.js REST API with Nodemailer notifications & JSON file storage
 // ====================================================================
 
@@ -70,7 +70,7 @@ app.use(express.static(path.join(__dirname, '..')));
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
-    message: 'Shree Bhramani Enterprise API is running',
+    message: 'Shree Bhramani Industries API is running',
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development',
     version: '1.0.0'
@@ -110,7 +110,7 @@ app.use((err, req, res, _next) => {
 app.listen(PORT, () => {
   console.log('');
   console.log('┌─────────────────────────────────────────────────────┐');
-  console.log('│   Shree Bhramani Enterprise — Backend API Server    │');
+  console.log('│   Shree Bhramani Industries — Backend API Server    │');
   console.log('├─────────────────────────────────────────────────────┤');
   console.log(`│   Listening on : http://localhost:${PORT}               │`);
   console.log(`│   Environment  : ${(process.env.NODE_ENV || 'development').padEnd(33)}│`);

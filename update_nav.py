@@ -15,10 +15,10 @@ for file in files:
     # Update Logo div
     logo_pattern = re.compile(r'<div class="flex items-center">\s*<img alt="Shree Bhramani Logo" class="object-contain" style="height: 72px; width: auto;" src="assets/company_logo_cropped\.png"/>\s*</div>')
     new_logo = '''<div class="flex items-center gap-3">
-<button id="mobile-menu-btn" class="md:hidden text-slate-700 dark:text-slate-300 hover:text-sky-700 transition-colors" aria-label="Toggle Menu">
+<button id="mobile-menu-btn" class="md:hidden text-slate-700 dark:text-slate-300 hover:text-blue-900 transition-colors" aria-label="Toggle Menu">
 <span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
 </button>
-<img alt="Shree Bhramani Logo" class="object-contain" style="height: 60px; width: auto;" src="assets/company_logo_cropped.png"/>
+<img alt="Shree Bhramani Logo" class="object-contain" style="height: 60px; width: auto;" src="assets/SHREE_BRAHMANI_INDUSTRIES_LOGO.png"/>
 </div>'''
     content = logo_pattern.sub(new_logo, content)
 
@@ -32,7 +32,7 @@ for file in files:
 <!-- Mobile Menu Drawer -->
 <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
 <div class="flex flex-col gap-4">
-<a class="text-xl font-['Manrope'] font-bold text-sky-700 dark:text-sky-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
+<a class="text-xl font-['Manrope'] font-bold text-blue-900 dark:text-blue-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="About_Contact.html">About</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="contact_us.html">Contact</a>

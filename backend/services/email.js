@@ -42,7 +42,7 @@ async function sendEmail({ to, subject, html, text }) {
   }
 
   const info = await t.sendMail({
-    from: `"Shree Bhramani Enterprise" <${process.env.EMAIL_USER}>`,
+    from: `"Shree Bhramani Industries" <${process.env.EMAIL_USER}>`,
     to,
     subject,
     text,
@@ -94,7 +94,7 @@ function contactNotificationHtml(data) {
         <div class="message-box">${(data.message || '').replace(/\n/g, '<br>')}</div>
       </div>
     </div>
-    <div class="footer"><p>© 2024 Shree Bhramani Enterprise — Engineered for Precision</p></div>
+    <div class="footer"><p>© 2024 Shree Bhramani Industries — Engineered for Precision</p></div>
   </div>
 </body>
 </html>`;
@@ -126,7 +126,7 @@ function contactConfirmationHtml(data) {
 <body>
   <div class="container">
     <div class="header">
-      <h1>Shree Bhramani Enterprise</h1>
+      <h1>Shree Bhramani Industries</h1>
       <p>Industrial Printing & Coding Solutions</p>
     </div>
     <div class="body">
@@ -138,7 +138,7 @@ function contactConfirmationHtml(data) {
         <a class="btn" href="https://shreebhramani.in/Our_Printers.html">Browse Our Products</a>
       </div>
     </div>
-    <div class="footer"><p>Plot No. 442, Phase IV, GIDC Industrial Estate, Vatva, Ahmedabad, Gujarat 382445<br>© 2024 Shree Bhramani Enterprise</p></div>
+    <div class="footer"><p>Plot No. 442, Phase IV, GIDC Industrial Estate, Vatva, Ahmedabad, Gujarat 382445<br>© 2024 Shree Bhramani Industries</p></div>
   </div>
 </body>
 </html>`;
@@ -185,7 +185,7 @@ function quoteNotificationHtml(data) {
         <div class="message-box">${(data.message || '').replace(/\n/g, '<br>')}</div>
       </div>
     </div>
-    <div class="footer"><p>© 2024 Shree Bhramani Enterprise — Engineered for Precision</p></div>
+    <div class="footer"><p>© 2024 Shree Bhramani Industries — Engineered for Precision</p></div>
   </div>
 </body>
 </html>`;

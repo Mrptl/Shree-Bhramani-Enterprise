@@ -1,14 +1,14 @@
 {
   "name": "shree-bhramani-backend",
   "version": "1.0.0",
-  "description": "Backend API for Shree Bhramani Enterprise website",
+  "description": "Backend API for Shree Bhramani Industries website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": ["express", "api", "shree-bhramani"],
-  "author": "Shree Bhramani Enterprise",
+  "author": "Shree Bhramani Industries",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
