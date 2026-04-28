@@ -94,6 +94,22 @@ async function submitForm(endpoint, data) {
 document.addEventListener('DOMContentLoaded', () => {
 
     // ============================================================
+    // Preloader Fade Out
+    // ============================================================
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('page-preloader');
+        if (preloader) {
+            // Small delay to ensure the animation is visible for a moment and feels deliberate
+            setTimeout(() => {
+                preloader.classList.add('loaded');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 800); // match CSS transition duration
+            }, 300);
+        }
+    });
+
+    // ============================================================
     // Mobile Menu
     // ============================================================
     const mobileMenuBtn  = document.getElementById('mobile-menu-btn');
