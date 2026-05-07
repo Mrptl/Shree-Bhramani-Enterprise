@@ -249,6 +249,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================
+    // Get Quote Modal
+    // ============================================================
+    const quoteModal = document.getElementById('get-quote-modal');
+    const getQuoteBtns = document.querySelectorAll('.get-quote-btn');
+    const closeQuoteBtn = document.getElementById('close-quote-modal');
+    const cancelQuoteBtn = document.getElementById('cancel-quote-btn');
+    const closeQuoteOverlay = document.getElementById('close-quote-modal-overlay');
+
+    if (quoteModal) {
+        const openQuoteModal = (e) => {
+            e.preventDefault();
+            quoteModal.classList.remove('opacity-0', 'pointer-events-none');
+            quoteModal.classList.add('opacity-100', 'pointer-events-auto');
+            const modalInner = quoteModal.querySelector('div.relative');
+            if (modalInner) {
+                modalInner.classList.remove('scale-95');
+                modalInner.classList.add('scale-100');
+            }
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeQuoteModalFunc = () => {
+            quoteModal.classList.remove('opacity-100', 'pointer-events-auto');
+            quoteModal.classList.add('opacity-0', 'pointer-events-none');
+            const modalInner = quoteModal.querySelector('div.relative');
+            if (modalInner) {
+                modalInner.classList.remove('scale-100');
+                modalInner.classList.add('scale-95');
+            }
+            document.body.style.overflow = '';
+        };
+
+        getQuoteBtns.forEach(btn => btn.addEventListener('click', openQuoteModal));
+        if (closeQuoteBtn) closeQuoteBtn.addEventListener('click', closeQuoteModalFunc);
+        if (cancelQuoteBtn) cancelQuoteBtn.addEventListener('click', closeQuoteModalFunc);
+        if (closeQuoteOverlay) closeQuoteOverlay.addEventListener('click', closeQuoteModalFunc);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !quoteModal.classList.contains('opacity-0')) {
+                closeQuoteModalFunc();
+            }
+        });
+    }
+
+    // ============================================================
     // Quote Form (CIJ_Printer_Detail.html & general quote forms)
     // ============================================================
     const quoteForms = document.querySelectorAll('.quote-form');
