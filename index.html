@@ -100,9 +100,18 @@
                 <a class="font-['Manrope'] font-bold tracking-tight text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1"
                     href="index.html">Home</a>
                 <a class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-950 dark:hover:text-blue-200 transition-colors"
-                    href="Our_Printers.html">Products</a>
-                <a class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-950 dark:hover:text-blue-200 transition-colors"
                     href="About_Contact.html">About</a>
+                <div class="relative group">
+                    <button class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-950 dark:hover:text-blue-200 transition-colors flex items-center gap-1">
+                        Products <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="absolute top-full left-0 pt-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg shadow-xl flex flex-col overflow-hidden">
+                            <a href="Our_Printers.html" class="px-4 py-3 text-sm font-['Inter'] font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors border-b border-slate-100 dark:border-slate-800">Printers</a>
+                            <a href="Our_Accessories.html" class="px-4 py-3 text-sm font-['Inter'] font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors">Accessories</a>
+                        </div>
+                    </div>
+                </div>
                 <a class="font-['Manrope'] font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-950 dark:hover:text-blue-200 transition-colors"
                     href="contact_us.html">Contact</a>
             </div>
@@ -119,16 +128,13 @@
                 <a class="text-xl font-['Manrope'] font-bold text-blue-900 dark:text-blue-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="index.html">Home</a>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
-                    href="Our_Printers.html">Products</a>
-                <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="About_Contact.html">About</a>
+                <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
+                    href="Our_Printers.html">Products</a>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="contact_us.html">Contact</a>
             </div>
-            <a href="contact_us.html"
-                class="get-quote-btn w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4 block text-center">
-                Get Quote
-            </a>
+
         </div>
     </header>
     <main class="pt-20">
@@ -234,10 +240,9 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 h-auto lg:h-[700px]">
                     <div class="lg:col-span-8 group relative rounded-xl overflow-hidden bg-surface-container-high">
-                        <img alt="Advanced CIJ Printer Control Panel Interface for Manufacturing"
+                        <img alt="PS-06 High Resolution Inkjet Printer (Six Head)"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            alt="Sophisticated industrial CIJ printer machine on a clean assembly line, brushed metal finish, technical interface screen glowing"
-                            src="assets/printer1_gen.png" />
+                            src="assets/printers/PS-06 high resolution inkjet printer (six head).webp" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-on-surface via-transparent to-transparent opacity-80">
                         </div>
@@ -245,9 +250,8 @@
                             <span
                                 class="bg-primary px-3 py-1 text-[0.6rem] font-bold uppercase tracking-widest rounded mb-4 inline-block">Best
                                 Seller</span>
-                            <h3 class="text-3xl font-black mb-4 font-headline">CIJ Series: Pro-Flow X1</h3>
-                            <p class="max-w-md text-slate-300 mb-6">Continuous Inkjet technology designed for non-stop
-                                marking on curved surfaces, cables, and packaging bottles.</p>
+                            <h3 class="text-3xl font-black mb-4 font-headline">PS-06 High Resolution</h3>
+                            <p class="max-w-md text-slate-300 mb-6">Advanced six-head inkjet technology designed for high-resolution, non-stop marking on complex packaging lines.</p>
                             <a href="Our_Printers.html"
                                 class="flex items-center gap-2 font-bold text-sm hover:gap-4 transition-all">
                                 View Full Series <span class="material-symbols-outlined" data-icon="arrow_right_alt"
@@ -259,24 +263,23 @@
                         <div
                             class="bg-surface-container rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-outline/10 group hover:-translate-y-2">
                             <div>
-                                <h4 class="text-xl font-bold mb-2 font-headline">PS Handheld Series</h4>
+                                <h4 class="text-xl font-bold mb-2 font-headline">Handheld Series</h4>
                                 <p class="text-sm text-on-surface-variant">Mobile precision for large-format packaging
                                     and warehousing logistics.</p>
                             </div>
                             <div class="flex items-end justify-between">
-                                <span class="text-3xl font-black text-primary">PS-200</span>
-                                <button
-                                    class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center">
-                                    <span class="material-symbols-outlined" data-icon="add"
-                                        aria-hidden="true">add</span>
-                                </button>
+                                <span class="text-3xl font-black text-primary">PS-M9</span>
+                                <a href="Our_Printers.html"
+                                    class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-blue-600 transition-colors">
+                                    <span class="material-symbols-outlined" data-icon="arrow_forward"
+                                        aria-hidden="true">arrow_forward</span>
+                                </a>
                             </div>
                         </div>
                         <div class="group relative rounded-xl overflow-hidden">
-                            <img alt="Precision Industrial Inkjet Printing Head in Action"
+                            <img alt="PS-M9 hand held injet printer"
                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                alt="Macro photo of ink droplets forming a high-resolution QR code on a pharmaceutical package, sharp focus, technical lighting"
-                                src="assets/printer3_gen.png" />
+                                src="assets/printers/PS-M9 hand held injet printer.avif" />
                             <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors">
                             </div>
                         </div>
@@ -434,6 +437,27 @@
         </svg>
     </a>
     <script src="assets/main.js?v=3"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn ? btn.querySelector('span') : null;
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    menu.classList.add('flex');
+                    if(icon) icon.textContent = 'close';
+                } else {
+                    menu.classList.add('hidden');
+                    menu.classList.remove('flex');
+                    if(icon) icon.textContent = 'menu';
+                }
+            });
+        }
+    });
+</script>
 </body>
 
 </html>

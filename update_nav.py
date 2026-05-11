@@ -33,8 +33,14 @@ for file in files:
 <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 shadow-xl flex-col px-6 py-8 gap-6 z-40 transition-all origin-top">
 <div class="flex flex-col gap-4">
 <a class="text-xl font-['Manrope'] font-bold text-blue-900 dark:text-blue-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="index.html">Home</a>
-<a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="Our_Printers.html">Products</a>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="About_Contact.html">About</a>
+<div class="flex flex-col border-b border-slate-200 dark:border-slate-800 pb-2">
+    <span class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 mb-2">Products</span>
+    <div class="flex flex-col pl-4 gap-2">
+        <a class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400" href="Our_Printers.html">Printers</a>
+        <a class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400" href="Our_Accessories.html">Accessories</a>
+    </div>
+</div>
 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2" href="contact_us.html">Contact</a>
 </div>
 <button class="w-full bg-industrial-gradient text-on-primary px-6 py-3.5 rounded-lg font-bold text-base shadow-md mt-4">

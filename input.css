@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @config "./tailwind.config.js";
+@source "./*.html";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/container-queries";
 

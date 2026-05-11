@@ -212,3 +212,8 @@ html {
 .pointer-events-auto { pointer-events: auto; }
 .right-4 { right: 1rem; }
 .scale-100 { transform: scale(1); }
+
+/* --- Missing Tailwind Utilities for Dropdown --- */
+.group:hover .group-hover\:opacity-100 { opacity: 1 !important; }
+.group:hover .group-hover\:visible { visibility: visible !important; }
+.group:hover .group-hover\:rotate-180 { transform: rotate(180deg) !important; }
