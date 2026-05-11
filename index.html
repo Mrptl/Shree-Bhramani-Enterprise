@@ -129,8 +129,16 @@
                     href="index.html">Home</a>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="About_Contact.html">About</a>
-                <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
-                    href="Our_Printers.html">Products</a>
+                <details class="group border-b border-slate-200 dark:border-slate-800 pb-2">
+                    <summary class="flex justify-between items-center text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 cursor-pointer list-none [&::-webkit-details-marker]:hidden" style="list-style: none;">
+                        Products
+                        <span class="material-symbols-outlined text-xl transition-transform group-open:rotate-180" aria-hidden="true">expand_more</span>
+                    </summary>
+                    <div class="flex flex-col pl-4 mt-4 gap-3 mb-2">
+                        <a href="Our_Printers.html" class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors">Printers</a>
+                        <a href="Our_Accessories.html" class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors">Accessories</a>
+                    </div>
+                </details>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="contact_us.html">Contact</a>
             </div>
@@ -438,26 +446,7 @@
     </a>
     <script src="assets/main.js?v=3"></script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = btn ? btn.querySelector('span') : null;
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                    menu.classList.add('flex');
-                    if(icon) icon.textContent = 'close';
-                } else {
-                    menu.classList.add('hidden');
-                    menu.classList.remove('flex');
-                    if(icon) icon.textContent = 'menu';
-                }
-            });
-        }
-    });
-</script>
+
 </body>
 
 </html>

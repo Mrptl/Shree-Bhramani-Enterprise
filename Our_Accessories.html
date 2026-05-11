@@ -127,8 +127,16 @@
                     href="index.html">Home</a>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="About_Contact.html">About</a>
-                <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
-                    href="Our_Printers.html">Products</a>
+                <details class="group border-b border-slate-200 dark:border-slate-800 pb-2">
+                    <summary class="flex justify-between items-center text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 cursor-pointer list-none [&::-webkit-details-marker]:hidden" style="list-style: none;">
+                        Products
+                        <span class="material-symbols-outlined text-xl transition-transform group-open:rotate-180" aria-hidden="true">expand_more</span>
+                    </summary>
+                    <div class="flex flex-col pl-4 mt-4 gap-3 mb-2">
+                        <a href="Our_Printers.html" class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors">Printers</a>
+                        <a href="Our_Accessories.html" class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors">Accessories</a>
+                    </div>
+                </details>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="contact_us.html">Contact</a>
             </div>
@@ -173,101 +181,101 @@
                 <div class="h-px w-12 bg-outline-variant opacity-20"></div>
             </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 md:gap-x-8 gap-y-6 md:gap-y-16">
             <div class="group flex flex-col reveal product-card" data-category="hardware" data-name="50mm Spring Back Holder">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/50mm%20spring%20back%20holder.jpg" alt="50mm Spring Back Holder" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Hardware</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">50mm Spring Back Holder</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Durable spring back holder for secure printhead mounting.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">50mm Spring Back Holder</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Durable spring back holder for secure printhead mounting.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="50mm Spring Back Holder" data-category="Hardware" data-image="assets/Accessories/50mm%20spring%20back%20holder.jpg" data-desc="Durable spring back holder designed to provide secure and flexible mounting for industrial printheads, absorbing minor impacts and vibrations." data-specs="['Size: 50mm', 'Material: Industrial Grade Steel', 'Compatibility: Universal Printheads', 'Feature: Shock Absorbing']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="50mm Spring Back Holder" data-category="Hardware" data-image="assets/Accessories/50mm%20spring%20back%20holder.jpg" data-desc="Durable spring back holder designed to provide secure and flexible mounting for industrial printheads, absorbing minor impacts and vibrations." data-specs="['Size: 50mm', 'Material: Industrial Grade Steel', 'Compatibility: Universal Printheads', 'Feature: Shock Absorbing']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="printheads" data-name="C-Type Printhead">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/C-type%20printhead.jpg" alt="C-Type Printhead" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Printheads</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">C-Type Printhead</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High-performance C-type printhead for precision coding.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">C-Type Printhead</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">High-performance C-type printhead for precision coding.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="C-Type Printhead" data-category="Printheads" data-image="assets/Accessories/C-type%20printhead.jpg" data-desc="High-performance C-type printhead engineered for precision coding and long-lasting durability in demanding industrial environments." data-specs="['Type: C-Type', 'Resolution: High Definition', 'Compatibility: TIJ Printers', 'Lifespan: Extended']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="C-Type Printhead" data-category="Printheads" data-image="assets/Accessories/C-type%20printhead.jpg" data-desc="High-performance C-type printhead engineered for precision coding and long-lasting durability in demanding industrial environments." data-specs="['Type: C-Type', 'Resolution: High Definition', 'Compatibility: TIJ Printers', 'Lifespan: Extended']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="ink_systems" data-name="Bulk Ink System">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/bulk%20ink%20system.jpg" alt="Bulk Ink System" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Ink Systems</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Bulk Ink System</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Continuous ink supply system for high-volume printing operations.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">Bulk Ink System</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Continuous ink supply system for high-volume printing operations.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="Bulk Ink System" data-category="Ink Systems" data-image="assets/Accessories/bulk%20ink%20system.jpg" data-desc="Continuous bulk ink supply system designed to drastically reduce downtime and consumable costs in high-volume printing operations." data-specs="['Capacity: Large Volume', 'Type: Continuous Supply', 'Compatibility: Universal', 'Maintenance: Low']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="Bulk Ink System" data-category="Ink Systems" data-image="assets/Accessories/bulk%20ink%20system.jpg" data-desc="Continuous bulk ink supply system designed to drastically reduce downtime and consumable costs in high-volume printing operations." data-specs="['Capacity: Large Volume', 'Type: Continuous Supply', 'Compatibility: Universal', 'Maintenance: Low']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="hardware" data-name="Height Adjustment Block">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/height%20adjustment%20block.jpg" alt="Height Adjustment Block" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Hardware</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Height Adjustment Block</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Precision block for fine-tuning printhead vertical positioning.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">Height Adjustment Block</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Precision block for fine-tuning printhead vertical positioning.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="Height Adjustment Block" data-category="Hardware" data-image="assets/Accessories/height%20adjustment%20block.jpg" data-desc="Precision machined height adjustment block allowing for micro-adjustments to the printhead's vertical position for optimal throw distance." data-specs="['Material: Machined Aluminum', 'Adjustment: Micro-Precision', 'Durability: Heavy Duty', 'Compatibility: Universal']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="Height Adjustment Block" data-category="Hardware" data-image="assets/Accessories/height%20adjustment%20block.jpg" data-desc="Precision machined height adjustment block allowing for micro-adjustments to the printhead's vertical position for optimal throw distance." data-specs="['Material: Machined Aluminum', 'Adjustment: Micro-Precision', 'Durability: Heavy Duty', 'Compatibility: Universal']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="ink_systems" data-name="High Adhesion Cartridge">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/high%20adhesion%20cartridge.avif" alt="High Adhesion Cartridge" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Ink Systems</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">High Adhesion Cartridge</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Specialized ink cartridge for printing on difficult, non-porous surfaces.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">High Adhesion Cartridge</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Specialized ink cartridge for printing on difficult, non-porous surfaces.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="High Adhesion Cartridge" data-category="Ink Systems" data-image="assets/Accessories/high%20adhesion%20cartridge.avif" data-desc="Specialized high adhesion ink cartridge formulated specifically for permanent marking on difficult, non-porous surfaces like plastics and metals." data-specs="['Type: Solvent Based', 'Adhesion: Extremely High', 'Drying Time: Fast', 'Surfaces: Non-Porous']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="High Adhesion Cartridge" data-category="Ink Systems" data-image="assets/Accessories/high%20adhesion%20cartridge.avif" data-desc="Specialized high adhesion ink cartridge formulated specifically for permanent marking on difficult, non-porous surfaces like plastics and metals." data-specs="['Type: Solvent Based', 'Adhesion: Extremely High', 'Drying Time: Fast', 'Surfaces: Non-Porous']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="hardware" data-name="Photocell & Synchronizer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/photocell%20and%20synchronizer.jpg" alt="Photocell & Synchronizer" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Hardware</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Photocell & Synchronizer</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Reliable product detection and print speed synchronization hardware.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">Photocell & Synchronizer</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Reliable product detection and print speed synchronization hardware.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="Photocell & Synchronizer" data-category="Hardware" data-image="assets/Accessories/photocell%20and%20synchronizer.jpg" data-desc="Industrial-grade photocell and rotary encoder synchronizer ensuring precise print registration regardless of conveyor speed variations." data-specs="['Type: Optical Sensor & Encoder', 'Accuracy: High Precision', 'Response Time: Ultra-Fast', 'Compatibility: Universal']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="Photocell & Synchronizer" data-category="Hardware" data-image="assets/Accessories/photocell%20and%20synchronizer.jpg" data-desc="Industrial-grade photocell and rotary encoder synchronizer ensuring precise print registration regardless of conveyor speed variations." data-specs="['Type: Optical Sensor & Encoder', 'Accuracy: High Precision', 'Response Time: Ultra-Fast', 'Compatibility: Universal']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="ink_systems" data-name="Water Based Cartridge">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/Accessories/water%20based%20cartridge.webp" alt="Water Based Cartridge" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Ink Systems</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">Water Based Cartridge</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Eco-friendly water-based ink for porous materials like paper and cardboard.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">Water Based Cartridge</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Eco-friendly water-based ink for porous materials like paper and cardboard.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="Water Based Cartridge" data-category="Ink Systems" data-image="assets/Accessories/water%20based%20cartridge.webp" data-desc="Eco-friendly water-based ink cartridge designed for high-contrast, bleed-free printing on porous substrates like paper, cardboard, and wood." data-specs="['Type: Water Based', 'Eco-Friendly: Yes', 'Odor: Low Odor', 'Surfaces: Porous (Cardboard, Paper)']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="Water Based Cartridge" data-category="Ink Systems" data-image="assets/Accessories/water%20based%20cartridge.webp" data-desc="Eco-friendly water-based ink cartridge designed for high-contrast, bleed-free printing on porous substrates like paper, cardboard, and wood." data-specs="['Type: Water Based', 'Eco-Friendly: Yes', 'Odor: Low Odor', 'Surfaces: Porous (Cardboard, Paper)']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
@@ -468,26 +476,7 @@
     </a>
     <script src="assets/main.js?v=3"></script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = btn ? btn.querySelector('span') : null;
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                    menu.classList.add('flex');
-                    if(icon) icon.textContent = 'close';
-                } else {
-                    menu.classList.add('hidden');
-                    menu.classList.remove('flex');
-                    if(icon) icon.textContent = 'menu';
-                }
-            });
-        }
-    });
-</script>
+
 </body>
 
 </html>

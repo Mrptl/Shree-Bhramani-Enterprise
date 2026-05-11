@@ -127,8 +127,16 @@
                     href="index.html">Home</a>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="About_Contact.html">About</a>
-                <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
-                    href="Our_Printers.html">Products</a>
+                <details class="group border-b border-slate-200 dark:border-slate-800 pb-2">
+                    <summary class="flex justify-between items-center text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 cursor-pointer list-none [&::-webkit-details-marker]:hidden" style="list-style: none;">
+                        Products
+                        <span class="material-symbols-outlined text-xl transition-transform group-open:rotate-180" aria-hidden="true">expand_more</span>
+                    </summary>
+                    <div class="flex flex-col pl-4 mt-4 gap-3 mb-2">
+                        <a href="Our_Printers.html" class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors">Printers</a>
+                        <a href="Our_Accessories.html" class="text-lg font-['Manrope'] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors">Accessories</a>
+                    </div>
+                </details>
                 <a class="text-xl font-['Manrope'] font-bold text-slate-600 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-2"
                     href="contact_us.html">Contact</a>
             </div>
@@ -169,115 +177,115 @@
                 <div class="h-px w-12 bg-outline-variant opacity-20"></div>
             </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 md:gap-x-8 gap-y-6 md:gap-y-16">
             <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="PS-01 Single Head Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-01%20high%20resolution%20inkjet%20printer%20(single%20head).jpg" alt="PS-01 Single Head Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-01 Single Head</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High resolution single-head inkjet printer for precise line coding.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-01 Single Head</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">High resolution single-head inkjet printer for precise line coding.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-01 Single Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-01%20high%20resolution%20inkjet%20printer%20(single%20head).jpg" data-desc="High resolution single-head inkjet printer for precise line coding. Built for reliability in demanding industrial environments." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Maintenance: Cartridge-based', 'Interface: Touchscreen']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-01 Single Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-01%20high%20resolution%20inkjet%20printer%20(single%20head).jpg" data-desc="High resolution single-head inkjet printer for precise line coding. Built for reliability in demanding industrial environments." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Maintenance: Cartridge-based', 'Interface: Touchscreen']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="PS-02 Double Head Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-02%20high%20resolution%20inkjet%20printer%20(double%20head).jpg" alt="PS-02 Double Head Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-02 Double Head</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High resolution double-head inkjet printer for versatile marking.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-02 Double Head</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">High resolution double-head inkjet printer for versatile marking.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-02 Double Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-02%20high%20resolution%20inkjet%20printer%20(double%20head).jpg" data-desc="High resolution double-head inkjet printer for versatile marking. Increased print height and efficiency." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Maintenance: Cartridge-based', 'Interface: Touchscreen']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-02 Double Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-02%20high%20resolution%20inkjet%20printer%20(double%20head).jpg" data-desc="High resolution double-head inkjet printer for versatile marking. Increased print height and efficiency." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Maintenance: Cartridge-based', 'Interface: Touchscreen']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="PS-04 Four Head Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS%20-04%20high%20resolution%20inkjet%20printer%20(four%20head%20printer).jpg" alt="PS-04 Four Head Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-04 Four Head</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High resolution four-head inkjet printer for wide coverage.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-04 Four Head</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">High resolution four-head inkjet printer for wide coverage.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-04 Four Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS%20-04%20high%20resolution%20inkjet%20printer%20(four%20head%20printer).jpg" data-desc="High resolution four-head inkjet printer for wide coverage. Suitable for large format coding on packaging." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Heads: 4 Synchronized', 'Interface: Touchscreen']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-04 Four Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS%20-04%20high%20resolution%20inkjet%20printer%20(four%20head%20printer).jpg" data-desc="High resolution four-head inkjet printer for wide coverage. Suitable for large format coding on packaging." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Heads: 4 Synchronized', 'Interface: Touchscreen']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="PS-06 Six Head Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-06%20high%20resolution%20inkjet%20printer%20(six%20head).webp" alt="PS-06 Six Head Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-06 Six Head</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High resolution six-head inkjet printer for maximum print height and complex coding.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-06 Six Head</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">High resolution six-head inkjet printer for maximum print height and complex coding.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-06 Six Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-06%20high%20resolution%20inkjet%20printer%20(six%20head).webp" data-desc="High resolution six-head inkjet printer for maximum print height and complex coding requirements." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Heads: 6 Synchronized', 'Interface: Touchscreen']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-06 Six Head Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-06%20high%20resolution%20inkjet%20printer%20(six%20head).webp" data-desc="High resolution six-head inkjet printer for maximum print height and complex coding requirements." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Heads: 6 Synchronized', 'Interface: Touchscreen']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="label" data-name="PS-06E Egg Printing Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-06E%20egg%20printing%20injet%20printer%20(six%20head).jpg" alt="PS-06E Egg Printing Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Specialty</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-06E Egg Printer</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Six head inkjet printer specifically engineered for safe and high-speed egg printing.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-06E Egg Printer</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Six head inkjet printer specifically engineered for safe and high-speed egg printing.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-06E Egg Printing Inkjet Printer" data-category="Specialty" data-image="assets/printers/PS-06E%20egg%20printing%20injet%20printer%20(six%20head).jpg" data-desc="Six head inkjet printer specifically engineered for safe and high-speed egg printing with food-grade inks." data-specs="['Resolution: High', 'Speed: High Speed', 'Application: Egg Coding', 'Interface: Touchscreen']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-06E Egg Printing Inkjet Printer" data-category="Specialty" data-image="assets/printers/PS-06E%20egg%20printing%20injet%20printer%20(six%20head).jpg" data-desc="Six head inkjet printer specifically engineered for safe and high-speed egg printing with food-grade inks." data-specs="['Resolution: High', 'Speed: High Speed', 'Application: Egg Coding', 'Interface: Touchscreen']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="packaging" data-name="PS-X1/X2 High Resolution Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-X1,2%20single%20and%20double%20head%20high%20resolution%20injet%20printer.jpg" alt="PS-X1/X2 High Resolution Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-on-surface text-surface px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">TIJ Series</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-X1/X2 Series</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Available in single and double head configurations for high-resolution industrial printing.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-X1/X2 Series</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Available in single and double head configurations for high-resolution industrial printing.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-X1/X2 High Resolution Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-X1,2%20single%20and%20double%20head%20high%20resolution%20injet%20printer.jpg" data-desc="Available in single and double head configurations for high-resolution industrial printing. Adaptive and efficient." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Heads: 1 or 2', 'Interface: Touchscreen']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-X1/X2 High Resolution Inkjet Printer" data-category="TIJ Series" data-image="assets/printers/PS-X1,2%20single%20and%20double%20head%20high%20resolution%20injet%20printer.jpg" data-desc="Available in single and double head configurations for high-resolution industrial printing. Adaptive and efficient." data-specs="['Resolution: High', 'Speed: Industrial Grade', 'Heads: 1 or 2', 'Interface: Touchscreen']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="all" data-name="PS-M9 Handheld Inkjet Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-M9%20hand%20held%20injet%20printer.avif" alt="PS-M9 Handheld Inkjet Printer" />
                     <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Handheld</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-M9 Handheld</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Portable and ergonomic handheld inkjet printer for on-the-go marking.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-M9 Handheld</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Portable and ergonomic handheld inkjet printer for on-the-go marking.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-M9 Handheld Inkjet Printer" data-category="Handheld" data-image="assets/printers/PS-M9%20hand%20held%20injet%20printer.avif" data-desc="Portable and ergonomic handheld inkjet printer for on-the-go marking on any surface or object." data-specs="['Battery Life: Long Lasting', 'Weight: Lightweight', 'Operation: Manual swipe', 'Connection: Wireless']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-M9 Handheld Inkjet Printer" data-category="Handheld" data-image="assets/printers/PS-M9%20hand%20held%20injet%20printer.avif" data-desc="Portable and ergonomic handheld inkjet printer for on-the-go marking on any surface or object." data-specs="['Battery Life: Long Lasting', 'Weight: Lightweight', 'Operation: Manual swipe', 'Connection: Wireless']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
             </div>
             <div class="group flex flex-col reveal product-card" data-category="all" data-name="PS-X9 High Resolution Handheld Printer">
-                <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-6 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/PS-X9%20high%20resolution%20hand%20held%20injet%20printer.jpeg" alt="PS-X9 High Resolution Handheld Printer" />
                     <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Handheld</div>
                 </div>
                 <div class="flex-1">
-                    <h3 class="font-headline font-extrabold text-2xl text-on-surface mb-2 leading-tight">PS-X9 Handheld</h3>
-                    <p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Premium high-resolution handheld inkjet printer with advanced capabilities.</p>
+                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">PS-X9 Handheld</h3>
+                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Premium high-resolution handheld inkjet printer with advanced capabilities.</p>
                 </div>
-                <button class="view-specs-btn w-full py-4 bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-2 group/btn" data-title="PS-X9 High Resolution Handheld Printer" data-category="Handheld" data-image="assets/printers/PS-X9%20high%20resolution%20hand%20held%20injet%20printer.jpeg" data-desc="Premium high-resolution handheld inkjet printer with advanced capabilities for high quality marking on diverse substrates." data-specs="['Resolution: Ultra High', 'Battery Life: Extended', 'Display: Integrated Screen', 'Connection: Wi-Fi/Bluetooth']">
+                <button class="view-specs-btn w-full py-2 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 hover:border-primary/50 text-primary font-headline font-bold rounded-lg transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="PS-X9 High Resolution Handheld Printer" data-category="Handheld" data-image="assets/printers/PS-X9%20high%20resolution%20hand%20held%20injet%20printer.jpeg" data-desc="Premium high-resolution handheld inkjet printer with advanced capabilities for high quality marking on diverse substrates." data-specs="['Resolution: Ultra High', 'Battery Life: Extended', 'Display: Integrated Screen', 'Connection: Wi-Fi/Bluetooth']">
                     View Specs
                     <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
                 </button>
@@ -478,26 +486,7 @@
     </a>
     <script src="assets/main.js?v=3"></script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = btn ? btn.querySelector('span') : null;
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                    menu.classList.add('flex');
-                    if(icon) icon.textContent = 'close';
-                } else {
-                    menu.classList.add('hidden');
-                    menu.classList.remove('flex');
-                    if(icon) icon.textContent = 'menu';
-                }
-            });
-        }
-    });
-</script>
+
 </body>
 
 </html>
